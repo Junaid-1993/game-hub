@@ -8,6 +8,7 @@ interface GenreListProps {
 }
 
 const GenreList = ({ onSelectGenre, selectedGenre }: GenreListProps) => {
+  // Getting static genre data.
   const { data: genres, isLoading, error } = useGenres();
 
   if (error) return null;

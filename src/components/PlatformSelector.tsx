@@ -9,6 +9,7 @@ interface PlatformSelectorProps {
 }
 
 const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: PlatformSelectorProps) => {
+  // Getting static platform data.
   const { data: platforms, error } = usePlatforms();
 
   if (error) return null;
