@@ -33,7 +33,7 @@ const useGames = (gameQuery: GameQuery) =>
       return lastPage.next ? allPages.length + 1 : undefined;
     },
 
-    staleTime: 1 * 60 * 60 * 1000,
+    staleTime: 24 * 60 * 60 * 1000, // 24h
   });
 
 export default useGames;
